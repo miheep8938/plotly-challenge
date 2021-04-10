@@ -1,3 +1,12 @@
+// // Get the data first 
+// function getData(UID) {
+//     d3.json("samples.json").then(data => {
+//         var bacteriaData = data.metadata
+//         console.log(bacteriaData);
+//     });
+//     console.log(UID)
+// };
+
 // Function to populate the demographic data
 function populateDemoInfo(UID) {
     var demographicInfoBox = d3.select("#sample-metadata");
@@ -103,11 +112,15 @@ function buildCharts(UID) {
           mode: "gauge+number",
           gauge: { axis: { range: [null, 9] },
                    steps: [
-                    { range: [0, 2], color: "#054C5C" },
-                    { range: [2, 4], color: "#5FD9F5"},
-                    { range: [4, 6], color: "#0BB5DB" },
-                    { range: [6, 8], color: "#38555C" },
-                    { range: [8, 9], color: "#088AA8" },
+                    { range: [0, 1], color: "lightgray" },
+                    { range: [1, 2], color: "lightgray"},
+                    { range: [2, 3], color: "lightgray" },
+                    { range: [3, 4], color: "lightgray" },
+                    { range: [4, 5], color: "lightgray" },
+                    { range: [5, 6], color: "lightgray" },
+                    { range: [6, 7], color: "lightgray" },
+                    { range: [7, 8], color: "lightgray" },
+                    { range: [8, 9], color: "gray" },
                   ]}
               
           }
